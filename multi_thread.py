@@ -57,18 +57,18 @@ def main_multiprocess():
     func_1(10)
 
 def func_1(num):
-    print('メインプロセスStart')
+    print('main_Start')
     for i in range(num):
-        print('メインプロセス:', i)
+        print('main_process:'+ str(i))
         time.sleep(1)
-    print('メインプロセスEnd')
+    print('main_End')
 
 def func_2(num):
-    print('サブプロセスStart')
+    print('sub_Start')
     for i in range(num):
-        print('サブプロセス:', i)
+        print('sub_process:' + str(i))
         time.sleep(0.5)
-    print('サブプロセスEnd')
+    print('sub_End')
 
 
 if __name__ == '__main__':
